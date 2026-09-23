@@ -13,6 +13,8 @@ function calculateTicketPrice(quantity, basePrice, isVIP = false) {
     totalPrice = totalPrice * 1.50;
   }
 
+  totalPrice = totalPrice - 10;
+
   return Math.round(totalPrice);
 }
 
